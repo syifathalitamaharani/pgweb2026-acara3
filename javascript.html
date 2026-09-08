@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+Nama: <i id="value_nama"></i>
+<br>
+Umur: <i id="value_umur"></i>
+    <script>
+
+        // String Variabel
+        var nama = "syifa thalita";
+
+        // Number Variabel
+        let umur = 19;
+
+        // Number Variabel
+        let tinggi = 158;
+
+        // Array
+        let film_favorit = "Barbie"
+
+        // String
+        let kelas = "Praktikum Pemrograman Geospasial WEB"
+
+        //console
+        console.log("Nama: "+ nama)
+        console.log(kelas)
+        console.log(umur)
+        console.log(tinggi)
+        console.log(film_favorit)
+        console.log(kelas)
+
+        //Arithmetic Operations
+        let a = 13;
+        let b = 17.2;
+
+        let jumlah = a + b;
+        console.log("Hasil penjumlahan a&b: " +jumlah)
+
+        let kurang = a - b;
+        console.log("Hasil pengurangan a&b: " +kurang)
+
+        let kali = a * b;
+        console.log("Hasil perkalian a&b: " +kali)
+
+        let bagi = a / b;
+        console.log("Hasil pembagian a&b: " +bagi)
+
+        let sisa = a % b;
+        console.log("Hasil sisa  a&b: " +sisa)
+
+        let pangkat = a ** b;
+        console.log("Hasil pangkat a&b: " +pangkat)
+
+        let nilai = 85;
+        if (nilai >= 90) {
+            console.log("Nilai: A")
+        } else if (nilai >=80) {
+            console.log("Nilai: B")
+        } else if (nilai >=70) {
+            console.log("Nilai: C")
+        } else if (nilai >=60) {
+            console.log("Nilai: D")
+        } else {
+            console.log("Nilai: E")
+        }
+
+        //Loops
+        for (let i= 1; i <= 5; i++){
+            console.log(i)
+        }
+
+        //Function
+        function penjumlahan(a, b) {
+            return console.log("Hasil penjumlahan: " + (a + b));
+        }
+
+        penjumlahan(20, 90)
+
+        //Menampilkan nama ke halaman WEB
+        document.getElementById("value_nama").innerHTML = nama;
+        document.getElementById("value_umur").innerHTML = umur + " tahun";
+
+    </script>
+    
+</body>
+</html>
